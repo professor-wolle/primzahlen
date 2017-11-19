@@ -8,16 +8,23 @@
    <body>
       <h1>Ausgabe</h2>
       <?php
-		$zahl = $_POST["zahl"];
-		
-		if ($zahl )
-		
-		
-		
-		
-		$zahl ist eine Primzahl.
-		
-		
+          
+          $a = $_POST["zahl"];
+          $is_prime = true;
+          
+          for ($b = 2; $b < $a; $b++) {
+              if ($a % $b == 0) {
+                  $is_prime = false;
+                  break;
+              }
+          }
+          
+          if ($is_prime) {
+              echo "$a is a prime number.";
+          } else {
+              echo "$a is not a prime number.";
+          }
+          
       ?>
   </body>
 </html>
