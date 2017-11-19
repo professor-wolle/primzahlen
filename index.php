@@ -8,7 +8,7 @@
    <body>
 		<form action="primzausgabe.php" method="post">
 	         <h1>Zahl hier eingeben:</h1>
-			<label for="zahl">Primzahl</label> 
+			<label for="zahl"> </label> 
 			<input type="text" name="zahl" id="zahl" maxlength="30">
             <button>Senden</button>
    </body>

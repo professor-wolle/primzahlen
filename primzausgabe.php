@@ -9,20 +9,20 @@
       <h1>Ausgabe</h2>
       <?php
           
-          $a = $_POST["zahl"];
-          $is_prime = true;
+          $zahl = $_POST["zahl"];
+          $primz = true;
           
-          for ($b = 2; $b < $a; $b++) {
-              if ($a % $b == 0) {
-                  $is_prime = false;
+          for ($zahlenb = 2; $zahlenb < $zahl; $zahlenb++) {
+              if ($zahl % $zahlenb == 0) {
+                  $primz = false;
                   break;
               }
           }
           
-          if ($is_prime) {
-              echo "$a is a prime number.";
+          if ($primz == true) {
+              echo "$zahl ist eine Primzahl.";
           } else {
-              echo "$a is not a prime number.";
+              echo "$zahl ist keine Primzahl";
           }
           
       ?>
